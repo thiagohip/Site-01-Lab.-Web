@@ -28,11 +28,10 @@ p {
 */
 
 p.maiusculo {
-    text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.5rem;
-    line-height: 1.5rem;
-    word-spacing: 1.2rem;
+    line-height: 1.0rem;
+    word-spacing: 0.5rem;
     color: rgb(0, 0, 0);
     font-family: "Times New Roman", Times, serif;
     text-shadow: 0.15rem 0.15rem 0.15rem red;
@@ -53,8 +52,9 @@ a:visited{
 }
 
 a:hover{
-    font: 20px Arial, bold ,sans-serif;
+    font: 20px Arial, sans-serif;
     color: purple;
+    text-transform: uppercase; 
 }
 
 body ul li{
@@ -67,29 +67,9 @@ body ol li{
 
 footer {
     clear: both;
-    background: darkred url("../img/seta.png") no-repeat left bottom;
+    /*Escolhi não usar o no-repeat*/
+    background: darkred url("../img/gumballkrt.png") left bottom;
     height: 1rem;
-    background-size: 15px ;
-}
-
-img#gumb {
-    width: 150px;
-}
-
-
-
-h1.page1 {
-    color: darkblue;
-    text-align: center;
-    border: 0.5rem double blue;
-}
-
-a#apage1 {
-color: blue;
-}
-
-img.rickpage3 {
-    width: 250px;
 }
 
 h1.page2 {
@@ -104,4 +84,23 @@ p.ppage2 {
 
 a.apage2 {
     color: rgb(175, 127, 37)
+}
+
+main.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem
+}
+
+main.flexbox {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main.flexbox article{
+    background-color: slateblue;
+    margin: 1rem;
+    padding: 2rem;
 }
