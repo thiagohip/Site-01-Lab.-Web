@@ -1,38 +1,107 @@
-h1 {
-    color:blue;
-    border: 0.3rem dotted blue
+/*
+Pq do "clear:both"?
+Fazer funcionar o a:hover.
+*/
+
+img {
+    display: block;
+}
+
+h1.index {
+    color:red;
+    text-align: center;
+    border: 0.6rem groove darkred
 }
 
 h2, h3, h4, h5, h6{
     display: none;
 }
 
-body ul li {
-    color: brown;
-}
+
+/*
+Para colocar o traço em cima do texto, porém não gostei da aparência
 
 p {
     text-decoration: overline #ccc double 0.1rem;
     text-indent: 1.5rem;
 }
+*/
 
 p.maiusculo {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.5rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     word-spacing: 1.2rem;
-    color: white;
-    font: italic small-caps bold 2rem monospace;
-    text-shadow: 0.2rem 0.2rem 0.3rem black, 0 0 1rem blue, 0 0 2rem darkblue;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0.15rem 0.15rem 0.15rem red;
+}
+
+a{
+    text-align: center;
 }
 
 a:link, a:active {
     text-decoration: none;
-    color: gold;
+    color: red;
 }
 
 a:visited{
     text-decoration: none;
-    color: green;
+    color: darkred;
+}
+
+a:hover{
+    font: 20px Arial, bold ,sans-serif;
+    color: purple;
+}
+
+body ul li{
+    color: darkred;
+}
+
+body ol li{
+    color: darkred;
+}
+
+footer {
+    clear: both;
+    background: darkred url("../img/seta.png") no-repeat left bottom;
+    height: 1rem;
+    background-size: 15px ;
+}
+
+img#gumb {
+    width: 150px;
+}
+
+
+
+h1.page1 {
+    color: darkblue;
+    text-align: center;
+    border: 0.5rem double blue;
+}
+
+a#apage1 {
+color: blue;
+}
+
+img.rickpage3 {
+    width: 250px;
+}
+
+h1.page2 {
+    color: gold;
+    border: dashed;
+    text-align: center;
+}
+
+p.ppage2 {
+    color: rgb(182, 182, 29);
+}
+
+a.apage2 {
+    color: rgb(175, 127, 37)
 }
